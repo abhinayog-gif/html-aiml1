@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu Demo</title>
+    <style>
+        /* common style for all links */
+        nav a {
+            background: lightblue;
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 3px;
+        }
+
+        /* 1. block */
+        .block-menu a {
+            display: block;
+        }
+
+        /* 2. inline */
+        .inline-menu a {
+            display: inline;
+        }
+
+        /* 3. inline-block */
+        .inlineblock-menu a {
+            display: inline-block;
+        }
+
+        /* 4. float + clear */
+        .float-menu a {
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Block Menu</h2>
+    <nav class="block-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Inline Menu</h2>
+    <nav class="inline-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Inline‑block Menu</h2>
+    <nav class="inlineblock-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Float Menu with Clear</h2>
+    <nav class="float-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="clear"></div>
+
+</body>
+</html>
+
+
