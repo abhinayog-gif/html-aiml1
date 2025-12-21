@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        /* Block Elements Section */
+        .block-demo {
+            background: #e1f5fe;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #01579b;
+        }
+
+        .block-nav {
+            background: #0277bd;
+            padding: 15px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .block-nav h3 {
+            margin: 0 0 10px 0;
+        }
+
+        /* Inline Elements Section */
+        .inline-demo {
+            background: #e8f5e8;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #1b5e20;
+        }
+
+        .inline-nav a {
+            background: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        /* Inline-block Elements Section */
+        .inline-block-demo {
+            background: #fff3e0;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #e65100;
+        }
+
+        .inline-block-nav {
+            background: #ff9800;
+            padding: 15px;
+            color: white;
+        }
+
+        .inline-block-nav a {
+            display: inline-block;
+            background: #f57c00;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        /* Float Navigation Section */
+        .float-demo {
+            background: #fce4ec;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #880e4f;
+            overflow: hidden;
+        }
+
+        .float-nav {
+            background: #c2185b;
+            padding: 15px;
+            color: white;
+        }
+
+        .float-nav a {
+            float: left;
+            background: #ad1457;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .float-clear {
+            clear: both;
+            background: #e91e63;
+            padding: 10px;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display & Float Navigation Demo</h1>
+
+    <!-- Block Display Demo -->
+    <div class="block-demo">
+        <h2>1. Block Display</h2>
+        <p>Block elements take full width and start on new line:</p>
+        <nav class="block-nav">
+            <h3>Block Navigation Menu</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>Each link stacks vertically (block behavior).</p>
+    </div>
+
+    <!-- Inline Display Demo -->
+    <div class="inline-demo">
+        <h2>2. Inline Display</h2>
+        <p>Inline elements sit side-by-side but can't set width/height:</p>
+        <nav class="inline-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>Links flow inline but padding affects layout unpredictably.</p>
+    </div>
+
+    <!-- Inline-block Display Demo -->
+    <div class="inline-block-demo">
+        <h2>3. Inline-block Display</h2>
+        <p>Best for navigation - side-by-side with width/height control:</p>
+        <nav class="inline-block-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>Perfect balance - inline flow + block properties.</p>
+    </div>
+
+    <!-- Float Navigation Demo -->
+    <div class="float-demo">
+        <h2>4. Float with Clear</h2>
+        <p>Floats create horizontal layout but need clearing:</p>
+        <nav class="float-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="float-clear">This content clears the float</div>
+        <p>Float: left creates horizontal nav; clear: both prevents collapse.</p>
+    </div>
+</body>
+</html>
