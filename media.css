@@ -1,0 +1,57 @@
+.item4{
+   grid-area:footer;
+} */
+.box{
+    height: 100px;
+/* .box{
+     height: 100px;
+   width :100%;
+   background-color: green;
+}
+@@ -93,4 +93,46 @@ align-content: center;
+   .box{
+       background-color: yellow;
+   }
+}  */
+  
+.body{
+    margin :0;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+}
+.logo{
+    color:white;
+
+}
+.menu{
+    display:none;
+    flex-direction: column;
+    background-color: grey;
+
+}
+.menu a{
+    color:white;
+    padding:1em;
+    text-decoration: none;
+    display: block;
+}
+.hamburger{
+    font-size: 2rem;
+    color:white;
+    cursor: pointer;
+}
+@media(min-width:768px){
+    .menu{
+        display:flex;
+        flex-direction: row;
+        position: static;
+        background-color: none;
+
+    }
+}
