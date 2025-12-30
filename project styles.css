@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear Hub - Premium Consumer Electronics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header: Sticky navigation with cart toggle -->
+    <header role="banner">
+        <div class="logo" aria-label="TechGear Hub">TechGear Hub</div>
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#" class="nav-link cart-toggle" id="cartToggle" aria-label="Shopping cart">Cart (<span id="cartCount">0</span>)</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section: Promotional banner with search and CTA -->
+    <section id="home" class="hero" role="banner" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <h1 id="hero-title">Discover Amazing Tech Deals!</h1>
+            <input type="search" class="search-bar" placeholder="Search products..." aria-label="Search products">
+            <button class="cta-btn" onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Grid: 12 cards in responsive grid -->
+    <section id="products" class="products" role="main" aria-labelledby="products-title">
+        <h2 id="products-title">Featured Products</h2>
+        <div class="products-grid">
+            <!-- Headphones -->
+            <article class="product-card" role="article">
+                <div class="product-image">
+                    <img src="https://source.unsplash.com/random/300x250/?headphones" alt="Sony WH-1000XM5 Wireless Headphones" loading="lazy">
+                </div>
+                <h3>Sony WH-1000XM5 Headphones</h3>
+                <div class="price"><span class="original">₹32,990</span> ₹24,990</div>
+                <div class="rating" aria-label="Rating: 4.8 out of 5">★★★★★</div>
+                <button class="add-to-cart" data-id="1" data-name="Sony WH-1000XM5 Headphones" data-price="24990" aria-label="Add to cart">Add to Cart</button>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://source.unsplash.com/random/300x250/?headphones,wireless" alt="Bose QuietComfort Headphones" loading="lazy">
+                </div
